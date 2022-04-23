@@ -9,7 +9,7 @@ export class Theme extends UI {
     let theme = localStorage.getItem("theme") || "dark";
 
     let dark = () => {
-      this.btnTheme.src = "/images/icon-sun.svg";
+      this.btnTheme.src = "images/icon-sun.svg";
 
       this.root.style.setProperty(
         "--mobile-image",
@@ -31,7 +31,7 @@ export class Theme extends UI {
     };
 
     let light = () => {
-      this.btnTheme.src = "/images/icon-moon.svg";
+      this.btnTheme.src = "images/icon-moon.svg";
 
       this.root.style.setProperty(
         "--mobile-image",
