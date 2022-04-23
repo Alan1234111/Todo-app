@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 :root {
-  --mobile-image: url("/images/bg-mobile-dark.jpg");
-  --desktop-image: url("/images/bg-desktop-dark.jpg");
+  --mobile-image: url("./images/bg-mobile-dark.jpg");
+  --desktop-image: url("./images/bg-desktop-dark.jpg");
   --ButtonActive: hsl(220, 98%, 61%);
   --task-complete: linear-gradient(
     50deg,
