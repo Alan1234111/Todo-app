@@ -231,7 +231,7 @@ body {
 
 .tasks__list-task-circle--completed::after {
   content: "";
-  background-image: url("images/icon-check.svg");
+  background-image: url("/images/icon-check.svg");
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -268,7 +268,7 @@ body {
 .tasks__list-task-delete {
   background-color: transparent;
   border: none;
-  background-image: url("images/icon-cross.svg");
+  background-image: url("/images/icon-cross.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
