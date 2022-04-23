@@ -15,6 +15,11 @@
 
     <style>
       .attribution {
+        color: gray;
+        position: fixed;
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
         font-size: 11px;
         text-align: center;
       }
@@ -27,7 +32,7 @@
     <header class="header">
       <section class="header__information">
         <h1 class="header__information-name">Todo</h1>
-        <img class="header__information-theme" src="/images/icon-sun.svg" />
+        <img class="header__information-theme" src="images/icon-sun.svg" />
       </section>
       <section class="header__section">
         <div class="header__section-circle circle"></div>
@@ -45,37 +50,6 @@
 
     <section class="tasks">
       <ul class="tasks__list">
-        <li class="tasks__list-task" draggable="true">
-          <button
-            class="tasks__list-task-circle circle tasks__list-task-circle--completed"
-          ></button>
-          <p class="tasks__list-task-text tasks__list-task-text--completed">
-            Jog around the park 3x
-          </p>
-          <button class="tasks__list-task-delete"></button>
-        </li>
-        <li class="tasks__list-task" draggable="true">
-          <button class="tasks__list-task-circle circle"></button>
-          <p class="tasks__list-task-text">10 minutes meditation</p>
-          <button class="tasks__list-task-delete"></button>
-        </li>
-        <li class="tasks__list-task" draggable="true">
-          <button class="tasks__list-task-circle circle"></button>
-          <p class="tasks__list-task-text">Read for 1 hour</p>
-          <button class="tasks__list-task-delete"></button>
-        </li>
-        <li class="tasks__list-task" draggable="true">
-          <button class="tasks__list-task-circle circle"></button>
-          <p class="tasks__list-task-text">Pick up groceries</p>
-          <button class="tasks__list-task-delete"></button>
-        </li>
-        <li class="tasks__list-task" draggable="true">
-          <button class="tasks__list-task-circle circle"></button>
-          <p class="tasks__list-task-text">
-            Complete Todo App on Frontend Mentor
-          </p>
-          <button class="tasks__list-task-delete"></button>
-        </li>
       </ul>
 
       <!-- Kończy sie lista zadań -->
@@ -97,13 +71,13 @@
       <p class="footer__info">Drag and drop to reorder list</p>
     </footer>
 
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    </div> 
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-    <script src="/JS/main.js" type="module"></script>
+    <script src="JS/main.js" type="module"></script>
   </body>
 </html>
