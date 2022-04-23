@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__information">
+        <h1 class="header__information-name">Todo</h1>
+        <img class="header__information-theme" src="/images/icon-sun.svg" />
+      </section>
+      <section class="header__section">
+        <div class="header__section-circle circle"></div>
+        <label for="header__section-add-task"></label>
+        <form action="submit" autocomplete="off" class="header__section-form">
+          <input
+            class="header__section-add-task"
+            type="text"
+            placeholder="Create a new todo..."
+            name="todo-input"
+          />
+        </form>
+      </section>
+    </header>
+
+    <section class="tasks">
+      <ul class="tasks__list">
+        <li class="tasks__list-task" draggable="true">
+          <button
+            class="tasks__list-task-circle circle tasks__list-task-circle--completed"
+          ></button>
+          <p class="tasks__list-task-text tasks__list-task-text--completed">
+            Jog around the park 3x
+          </p>
+          <button class="tasks__list-task-delete"></button>
+        </li>
+        <li class="tasks__list-task" draggable="true">
+          <button class="tasks__list-task-circle circle"></button>
+          <p class="tasks__list-task-text">10 minutes meditation</p>
+          <button class="tasks__list-task-delete"></button>
+        </li>
+        <li class="tasks__list-task" draggable="true">
+          <button class="tasks__list-task-circle circle"></button>
+          <p class="tasks__list-task-text">Read for 1 hour</p>
+          <button class="tasks__list-task-delete"></button>
+        </li>
+        <li class="tasks__list-task" draggable="true">
+          <button class="tasks__list-task-circle circle"></button>
+          <p class="tasks__list-task-text">Pick up groceries</p>
+          <button class="tasks__list-task-delete"></button>
+        </li>
+        <li class="tasks__list-task" draggable="true">
+          <button class="tasks__list-task-circle circle"></button>
+          <p class="tasks__list-task-text">
+            Complete Todo App on Frontend Mentor
+          </p>
+          <button class="tasks__list-task-delete"></button>
+        </li>
+      </ul>
+
+      <!-- Kończy sie lista zadań -->
+      <div class="tasks__number">
+        <p class="tasks__number-info">
+          <span class="tasks__number-quantity"></span> items left
+        </p>
+        <button class="tasks__number-button">Clear Completed</button>
+      </div>
+    </section>
+
+    <section class="sort">
+      <button class="sort__button sort__button--active">All</button>
+      <button class="sort__button">Active</button>
+      <button class="sort__button">Completed</button>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__info">Drag and drop to reorder list</p>
+    </footer>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="/JS/main.js" type="module"></script>
+  </body>
+</html>

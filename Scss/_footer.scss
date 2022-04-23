@@ -1,0 +1,12 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  margin: 5% auto 0;
+
+  &__info {
+    color: var(--font-color-unactive);
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    user-select: none;
+  }
+}
