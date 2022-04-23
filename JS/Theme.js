@@ -13,11 +13,11 @@ export class Theme extends UI {
 
       this.root.style.setProperty(
         "--mobile-image",
-        `url("/images/bg-mobile-dark.jpg")`
+        `url("images/bg-mobile-dark.jpg")`
       );
       this.root.style.setProperty(
         "--desktop-image",
-        `url("/images/bg-desktop-dark.jpg")`
+        `url("images/bg-desktop-dark.jpg")`
       );
 
       this.root.style.setProperty("--task-background", "hsl(235, 24%, 19%)");
@@ -35,11 +35,11 @@ export class Theme extends UI {
 
       this.root.style.setProperty(
         "--mobile-image",
-        `url("/images/bg-mobile-light.jpg")`
+        `url("images/bg-mobile-light.jpg")`
       );
       this.root.style.setProperty(
         "--desktop-image",
-        `url("/images/bg-desktop-light.jpg")`
+        `url("images/bg-desktop-light.jpg")`
       );
 
       this.root.style.setProperty("--task-background", "hsl(0, 0%, 98%)");
