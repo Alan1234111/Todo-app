@@ -3,8 +3,8 @@ $big-image-height: 300px;
 $transiton-time: 0.4s;
 
 :root {
-  --mobile-image: url("/images/bg-mobile-dark.jpg");
-  --desktop-image: url("/images/bg-desktop-dark.jpg");
+  --mobile-image: url("images/bg-mobile-dark.jpg");
+  --desktop-image: url("images/bg-desktop-dark.jpg");
   --ButtonActive: hsl(220, 98%, 61%);
   --task-complete: linear-gradient(
     50deg,
