@@ -1,0 +1,35 @@
+.sort {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--task-background);
+  padding: 15px 70px;
+  width: 90%;
+  margin: 5% auto 0;
+  border-radius: 10px;
+  transition: $transiton-time;
+  user-select: none;
+
+  @media (orientation: landscape) {
+    width: 40%;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    color: var(--font-color-unactive);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+
+    @media (orientation: landscape) {
+      &:hover {
+        color: var(--font-color-hover);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__button--active {
+    transition: $transiton-time;
+    color: var(--ButtonActive);
+  }
+}
